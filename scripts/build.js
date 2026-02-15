@@ -385,7 +385,7 @@ const siteJs = `;(function () {
       if (revealType === 'card') {
         const idx = Array.from(revealTargets).indexOf(node);
         if (idx > -1) {
-          node.style.transitionDelay = `${(idx % 6) * 55}ms`;
+          node.style.transitionDelay = String((idx % 6) * 55) + 'ms';
         }
       }
     });
