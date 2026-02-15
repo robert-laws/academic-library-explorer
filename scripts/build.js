@@ -512,7 +512,7 @@ function buildSitemap(topics, briefs) {
   ];
 
   const base = config.siteUrl || '';
-  const siteUrls = pageEntries.map((page) => base ? `${base.replace(/\\/$/, '')}/${page}` : `/${page}`);
+  const siteUrls = pageEntries.map((page) => base ? `${base.replace(/\/$/, '')}/${page}` : `/${page}`);
   const now = new Date().toISOString();
 
   const xml = [
