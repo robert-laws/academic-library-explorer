@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{description}}" />
+  <title>{{title}} | Academic Library Explorer</title>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Academic Library Explorer</a>
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="site-nav" aria-label="Main navigation">
+      {{nav}}
+    </nav>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+  {{hero}}
+  <section class="container page-content">
+    {{content}}
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Built as an open project for academic library professionals. Source repository prepared for GitHub Pages.</p>
+    <p>Updated: {{buildDate}}</p>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+{{inlineScripts}}
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "academic-library-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:check": "node scripts/build.js --strict"
+  },
+  "description": "Static knowledge portal about contemporary academic libraries."
+}
